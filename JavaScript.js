@@ -1,16 +1,21 @@
-var UserName = prompt("please Enter your name:")
+var UserName = prompt("Please Enter Your Name: ");
+alert("Hello " + UserName + "Welcome to Our website.");
 
-alert("Hello " + UserName + " Welcome to Pet Web Service.")
+var PetName = prompt("Please enter what kind of pet you like: cats, dogs, birds");
+var PetColor = prompt("What color you pet like:");
+PetCheck(PetName)
+alert("So you prefer you bet color to be " + PetColor + " Great");
 
-var PetKind = prompt("What kind of Pet you're intrested in: Cats, Dogs, or Brids")
 
-if (PetKind == 'Cats'){
-    alert("Great feel free to read more about " + PetKind + " in our website")
-}else if (PetKind == 'Dogs'){
-    alert("Great feel free to read more about " + PetKind + " in our website")
-}else if (PetKind == 'Birds'){
-    alert("Great feel free to read more about " + PetKind + " in our website")
-}else {
-    alert("Please refresh the page and try to enter the pet name again.")
+function PetCheck(name){
+    if (name == "cats"){
+        alert("So you like " + name + " great I like them to.");
+
+    }else if (name == "dogs"){
+        alert("Nice, So you like " + name + "use our websiet to read more about them.");
+    }else if (name == "birds"){
+        alert("Great, you like " + name + ", I hope you find our website informative about them");
+    }else {
+        alert("you miss spill the pet name please refresh the page and try again.")
+    }
 }
-
